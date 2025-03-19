@@ -1,0 +1,28 @@
+{
+  "name": "rekaze2e",
+  "version": "1.0.0",
+  "description": "Integration and E2E automation tests built on top of Cypress and Cucumber written in TypeScript.",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "latest",
+    "@bahmutov/cypress-esbuild-preprocessor": "latest",
+    "cypress": "latest",
+    "moment": "^2.30.1",
+    "nanoid": "^5.1.4",
+    "typescript": "latest",
+    "uuid-wand": "^1.0.3"
+  },
+  "cypress-cucumber-preprocessor": {
+    "stepDefinitions": [
+      "cypress/**/[filepath].{js,ts}",
+      "cypress/**/[filepath]/**/*.{js,ts}"
+    ],
+    "filterSpecs": true,
+    "omitFiltered": true
+  }
+}

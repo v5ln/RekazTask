@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+      "resolveJsonModule": true,
+      "forceConsistentCasingInFileNames": true,
+      "target": "es2019",
+      "module": "NodeNext",
+      "rootDir": "cypress",
+      "skipLibCheck": true,
+      "strict": true,
+      "noImplicitAny": false,
+      "strictNullChecks": false,
+      "baseUrl": "./",
+      "paths": {
+          "@pageObject/*": ["cypress/pageObject/*"],
+          "@support/*": ["cypress/support/*"],
+      },
+      "esModuleInterop": true
+  },
+  "exclude": ["node_modules"]
+}
